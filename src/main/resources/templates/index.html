@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" th:href="@{/index.css}">
-    <link rel="shortcut icon" th:href="@{/static/favicon.ico}" href="../static/favicon.ico" type="image/x-icon">
     <title>Password Generator</title>
 </head>
 
@@ -24,7 +23,7 @@
                 <span class="plus">+</span>
             </div>
 
-            <label for="symbols">Symbols</label>
+            <label id="symb" for="symbols">Symbols</label>
             <input type="checkbox" name="symbols" id="symbols"> <br>
 
             <input type="submit" value="Generate Password">

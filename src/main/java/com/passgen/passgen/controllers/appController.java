@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
 public class appController {
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String home(Model model) {
-        model.addAttribute("password", "Click Generate Password ");
+        model.addAttribute("password", "Just click the button below 😎");
         return "index";
     }
 
