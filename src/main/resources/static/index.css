@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css?family=Varela+Round");
+body {
+    background-color: #fff;
+    font-family: "Varela Round", sans-serif;
+}
+
+.wrapper {
+    width: 470px;
+    height: 400px;
+    background: linear-gradient(223.78deg, rgba(38, 19, 77, 0.9) 40%, rgba(162, 61, 5, 0.9) 90%);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+}
+
+.password {
+    width: 397px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.63);
+    border-radius: 10px;
+    margin: 10px 40px;
+    display: flex;
+}
+
+.password-text {
+    text-align: center;
+    width: 100%;
+    font-size: 1.5em;
+    padding: 10px 5px;
+}
+
+.minus, .plus {
+    cursor: pointer;
+    background: #f2f2f2;
+    border-radius: 4px;
+    padding: 0px 8px 0px 8px;
+    border: 1px solid #ddd;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin: 0 15px;
+    border-radius: 50%;
+    color: #000;
+    font-size: 2em;
+}
+
+/* Chrome, Safari, Edge, Opera */
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.minus {
+    margin-left: 27%;
+    padding: 0px 10px;
+}
+
+form {
+    padding-top: 20px;
+    padding-right: 80px;
+}
+
+.length {
+    display: flex;
+}
+
+.length > label {
+    padding-top: 10px;
+}
+
+label {
+    padding-left: 10%;
+    text-align: center;
+    font-size: 24px;
+}
+
+input[type="submit"] {
+    height: auto;
+    background-color: rgba(38, 19, 77, 0.9);;
+    width: max-content;
+    padding: 15px 12px;
+    border-radius: 10px;
+    outline: 0;
+    color: #fff;
+    border: 0;
+    font-size: 20px;
+    margin-top: 70px;
+    margin-left: 140px;
+}
+
+#symbols {
+    margin-left: 46%;
+    margin-top: 15%;
+}
+
+#length {
+    margin-top: 5px;
+    margin-left: unset;
+    width: 100px;
+    text-align: center;
+    font-size: 26px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    outline: 0;
+}
+
+input[type="submit"]:hover {
+    background-color: rgba(38, 19, 77, 0.9);
+    color: #fff;
+}
+
+input[type="checkbox"] {
+    height: 40px;
+    width: 40px;
+} 
