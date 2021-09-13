@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" th:href="@{/index.css}">
     <title>Password Generator</title>
 </head>
@@ -13,14 +14,15 @@
 <body>
     <div class="wrapper">
         <div class="password">
-            <span id="cont" class="password-text">[[${password}]]</span>
+            <span id="cont" class="password-text" onclick="selectText(this.id)">[[${password}]]</span>
         </div>
         <form id="form" th:action="@{/}" method="post">
             <div class="length">
                 <label for="length">Length</label>
-                <span class="minus">-</span>
+                <i class="fa fa-minus-circle fa-3x minu" aria-hidden="true"></i>
                 <input type="number" name="length" id="length" value="8" min="8" max="20" required>
-                <span class="plus">+</span>
+                <i class="fa fa-plus-circle fa-3x plu" aria-hidden="true"></i>
+
             </div>
 
             <label id="symb" for="symbols">Symbols</label>

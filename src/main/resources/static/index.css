@@ -89,10 +89,18 @@ form {
 
 .length {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .length>label {
     padding-top: 10px;
+}
+
+.fa {
+    color: #fff;
+    margin: 1rem;
 }
 
 label {
@@ -112,7 +120,7 @@ input[type="submit"] {
     color: #fff;
     border: 0;
     font-size: 20px;
-    margin-top: 70px;
+    margin-top: 50px;
     margin-left: 140px;
 }
 
